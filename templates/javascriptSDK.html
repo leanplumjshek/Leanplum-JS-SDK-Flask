@@ -1,0 +1,17 @@
+<body onload='start();'>
+
+<script type="text/javascript" src="/static/leanplum-js-sdk/leanplum.js"></script>
+<script>
+	function start() {
+		var isDevelopmentMode = true;
+
+		if (isDevelopmentMode) {
+			Leanplum.setAppIdForDevelopmentMode("app_gfD88mt9gXMR1PTDzpBMMsr7MXY8I7tWde89vVea7Lk",
+				"dev_pWxc6ve8iOWrHpthJnKMiP2sIjbwejmbLInFca7fzbU");
+		}
+
+		Leanplum.start( function(success) {
+			console.log('Success: ' + success)
+		});
+	}
+</script>
